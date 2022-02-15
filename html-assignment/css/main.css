@@ -1,0 +1,41 @@
+body { 
+    /* changes all font to arial and font size to 18px */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/* creates a background color of blue on all headings and the footer */
+h2, h3, footer {
+    background-color: cornflowerblue;
+}
+/* sets the title to a blue color */
+.site-title {
+    color: darkblue;
+}
+/* creates a black shadow behind image*/
+#my-image {
+    box-shadow: 10px 10px 2px 1px black;
+}
+/* changes bullets from circle to square*/
+ul {
+    list-style-type: square;
+}
+/* selects the "odd" list bullets and gives a grey background*/
+li:nth-child(odd) {
+    background:lightgray; 
+}
+/* eliminates line under link */
+a:link {
+    text-decoration: none;
+}
+/* creates background and border on link*/
+a:link {
+    background-color:lightpink;
+    color: black;
+    border: 2px solid maroon;
+    padding: 5px 10px;
+}
+/* creates a new color when link is hovered over*/
+a:hover {
+    color:blue;
+}
+
