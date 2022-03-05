@@ -1,0 +1,120 @@
+.titleContainer {
+  position: relative;
+  text-align: center;
+  color: snow;
+  background-size: 100% 100%;
+}
+
+.aussieTitle {
+  height: 600px;
+  width: 150px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 300%;
+}
+
+.menuBoxItem {
+  color: black;
+  text-align: center;
+  float: left;
+  width: 33.33%;
+  height: 25px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 165%;
+}
+
+.heading {
+  padding-top: 5%;
+  font-size: 170%;
+}
+
+.aussieArticle {
+  height: 250px;
+  width: 250px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.factsTitle {
+  font-size: 160%;
+}
+
+.contactTitle {
+  font-size: 160%;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+input[type="button"] {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: bisque;
+}
+
+textarea {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+
+.question {
+  font-size: 130%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-container {
+  margin: 0 auto;
+  max-width: 0 auto;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  float: right;
+  margin-right: 20px;
+}
+
+.page-container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: tan;
+  width: 20%;
+}
+
+.main {
+  width: 75%;
+  background-color: bisque;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.main-padding {
+  padding: 10px;
+}
