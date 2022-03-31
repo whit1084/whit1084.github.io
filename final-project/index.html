@@ -10,10 +10,11 @@
 </head>
 
 <body>
-    <!-- At the top of the website page is a navagation bar with different 
+    <!-- The header contains the navigation bar as well as the introduction.-->
+    <header>
+        <!-- At the top of the website page is a navagation bar with different 
     options to navagate, as well as a search bar and search button.-->
-    <nav>
-        <div class="topnav">
+        <nav class="topnav">
             <a class="active" href="#home">Home</a>
             <a href="#aboutus">About Us</a>
             <a href="#services">Services</a>
@@ -21,109 +22,105 @@
             <a href="#contact">Contact</a>
             <input type="text" placeholder="Search">
             <input type="button" value="Search">
-        </div>
-    </nav>
-    <!-- Here is a container for the header, also containing any content that will be within the header such as pictures, paragraphs, etc.-->
-    <header>
-        <div class="title-container">
+        </nav>
+        <!-- Here is a container for the header, also containing any content that will be within the header such as pictures, paragraphs, etc.-->
+        <section class="title-container">
             <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nam ipsa quia sapiente dicta harum,
                 rerum commodi odio vitae similique dolorem cupiditate autem cum aliquid repellendus amet voluptatum
                 consequuntur id.</p>
             <input type="button" value="Connect with us">
-        </div>
+        </section>
     </header>
-    <!-- The first article on the opening page, containing information about the website-->
-    <article>
-        <div class="article">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque consequatur iusto, modi architecto, eum
-                magnam illo culpa inventore reiciendis excepturi fugiat tenetur dolores. Similique aspernatur, ipsa odio
-                amet sed possimus!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo harum deleniti, incidunt odio modi
-                perspiciatis architecto laboriosam, libero odit eaque dicta repellat quas eos reiciendis! Eum sunt
-                nesciunt
-                modi doloremque!</p>
-        </div>
-    </article>
+    <!-- A section on the opening page, containing information about the website-->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque consequatur iusto, modi architecto, eum
+            magnam illo culpa inventore reiciendis excepturi fugiat tenetur dolores. Similique aspernatur, ipsa odio
+            amet sed possimus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo harum deleniti, incidunt odio modi
+            perspiciatis architecto laboriosam, libero odit eaque dicta repellat quas eos reiciendis! Eum sunt
+            nesciunt
+            modi doloremque!</p>
+    </section>
 
     <!-- Now we begin the website's main content/information-->
     <main>
-        <!-- This first section contains all the "Our Services" topics and content.-->
-        <section>
+        <!-- The "services" class contains all topics up until "our vision"> This entire section is to be styled.-->
+        <div class="services">
+            <h2>Our Services</h2>
             <!-- Each portion of information is within a container, because each topic will be styled independently.-->
-            <div class="service-container">
-                <h2>Our Services</h2>
-                <div class="digital-trans">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus voluptatibus dolores tempora.
-                        Nobis adipisci, nam nisi nihil id magnam delectus magni molestiae voluptatibus ex quis veritatis
-                        commodi, quo ipsam eligendi.</p>
-                    <input type="button" value="Digital Plans">
-                </div>
-                <div class="marketing">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo explicabo tempore cumque
-                        quas excepturi. Facilis reprehenderit minus ducimus assumenda perferendis magnam doloribus,
-                        ullam ab obcaecati aut quia consequatur veritatis.</p>
-                    <input type="button" value="Marketing Plans">
-                </div>
-                <div class="video-production">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aliquid tempora veniam quae,
-                        animi amet omnis. Asperiores, est pariatur, illo modi officiis non possimus repellendus autem
-                        magni odio dolore laboriosam!</p>
-                    <input type="button" value="Video Plans">
-                </div>
-                <div class="web-dev">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aliquid tempora veniam quae,
-                        animi amet omnis. Asperiores, est pariatur, illo modi officiis non possimus repellendus autem
-                        magni odio dolore laboriosam!</p>
-                    <input type="button" value="Web Plans">
-                </div>
-                <div class="print">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aliquid tempora veniam quae,
-                        animi amet omnis. Asperiores, est pariatur, illo modi officiis non possimus repellendus autem
-                        magni odio dolore laboriosam!</p>
-                    <input type="button" value="Print Plans">
-                </div>
-        </section>
-        <!-- This small container is for the "Our Vision" part of the page, which is underneath the above "Our Services" container. This container will be styled differently from the above, which is why they are seperate.-->
-        <div class="our-vision">
+            <section class="digital-trans">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus voluptatibus dolores tempora.
+                    Nobis adipisci, nam nisi nihil id magnam delectus magni molestiae voluptatibus ex quis veritatis
+                    commodi, quo ipsam eligendi.</p>
+                <input type="button" value="Digital Plans">
+            </section>
+            <section class="marketing">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo explicabo tempore cumque
+                    quas excepturi. Facilis reprehenderit minus ducimus assumenda perferendis magnam doloribus,
+                    ullam ab obcaecati aut quia consequatur veritatis.</p>
+                <input type="button" value="Marketing Plans">
+            </section>
+            <section class="video-production">
+                <h3>Video Production</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aliquid tempora veniam quae,
+                    animi amet omnis. Asperiores, est pariatur, illo modi officiis non possimus repellendus autem
+                    magni odio dolore laboriosam!</p>
+                <input type="button" value="Video Plans">
+            </section>
+            <section class="web-dev">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aliquid tempora veniam quae,
+                    animi amet omnis. Asperiores, est pariatur, illo modi officiis non possimus repellendus autem
+                    magni odio dolore laboriosam!</p>
+                <input type="button" value="Web Plans">
+            </section>
+            <section class="print">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aliquid tempora veniam quae,
+                    animi amet omnis. Asperiores, est pariatur, illo modi officiis non possimus repellendus autem
+                    magni odio dolore laboriosam!</p>
+                <input type="button" value="Print Plans">
+            </section>
+        </div>
+        <!-- This small container is for the "our vision" part of the page, which is underneath the above "our services" container. This container will be styled differently from the above, which is why they are seperate.-->
+        <section class="our-vision">
             <h3>Our Vision</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatibus alias iusto magni dolore
-                praesentium, voluptatem repellendus? Repudiandae, cum porro iste tempore ut vero, obcaecati rerum sit et
+                praesentium, voluptatem repellendus? Repudiandae, cum porro iste tempore ut vero, obcaecati rerum
+                sit et
                 laudantium sed!</p>
             <input type="button" value="Learn More">
-        </div>
-    </main>
-    <!-- The aside content contains all the extra information; the team, location, hours and contact option. -->
-    <aside>
+        </section>
+        <!-- The "extra-info" class contains all the extra information; the team, location, hours and contact option. -->
         <div class="extra-info">
-            <!-- This container is for the entire aside content.-->
-            <div class="our-team">
+            <section class="our-team">
                 <!-- A container only for the "Out Team" content.-->
                 <h2>Our Team</h2>
                 <div class="john">
                     <!-- Both John and Bob have a seperate container because the information is on opposide sides of the webpage.-->
                     <h3>John Doe</h3>
                     <h5>CEO and Co-owner</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit ab nobis rem quae odit laborum
-                        vel exercitationem aliquid repellendus obcaecati praesentium ea ad possimus amet, nulla dolore
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit ab nobis rem quae odit
+                        laborum
+                        vel exercitationem aliquid repellendus obcaecati praesentium ea ad possimus amet, nulla
+                        dolore
                         eum, accusantium nisi?</p>
                 </div>
                 <div class="bob">
                     <h3>Bob Rite</h3>
                     <h5>CFO and Co-owner</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora amet, beatae aspernatur culpa
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora amet, beatae aspernatur
+                        culpa
                         iure expedita aliquam dicta perspiciatis tempore. Eos perferendis ad quae ex ipsa enim ipsum
                         illum vitae quis.</p>
                 </div>
-            </div>
+            </section>
 
-            <div class="contact-us">
+            <section class="contact-us">
                 <h2>Contact Us</h2>
                 <!-- Both the message and location are in their own container to be styled seperatley.-->
                 <div class="send-message">
@@ -144,10 +141,10 @@
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
+            </section>
 
             <!-- This container is based on styling the chart of the operation hours.-->
-            <div class="hours">
+            <section class="hours">
                 <h3>Hours of operation</h3>
                 <div class="grid-container">
                     <!-- Content is divided into rows and coloumns in preperation for styling.-->
@@ -175,9 +172,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </aside>
+
+    </main>
     <!-- Here is the footer containing copyright and sources.-->
     <footer>
         <div class="footer">
