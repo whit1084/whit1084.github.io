@@ -1,3 +1,31 @@
 body {
     background-color: bisque;
 }
+
+.topnav {
+    background-color:cornsilk;
+}
+
+.title-container {
+    background-color: khaki;
+}
+
+.about {
+    background-color: lightgreen;
+}
+
+.services {
+    background-color: lightseagreen;
+}
+
+.our-vision {
+    background-color: lightsteelblue;
+}
+
+.extra-info {
+    background-color: linen;
+}
+
+.footer {
+    background-color: orange;
+}
