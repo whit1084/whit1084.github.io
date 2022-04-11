@@ -1,13 +1,49 @@
 body {
     background-color: bisque;
 }
-
+/* nav bar container */
 .topnav {
-    background-color:cornsilk;
+    background-color:black;
+    position: relative;
+    text-align: center;
+    background-size: 100% 100%;
+
+}
+/* nav text styles */
+a {
+    display:block;
+    text-align: center;
+    padding: 14px 16px;
+    display: inline;
+    float:initial;
+
+}
+
+.active {
+    background-color: #c78c06;
 }
 
 .title-container {
+    text-align: center;
+    position: relative;
     background-color: khaki;
+}
+
+.main-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.title-picture {
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about {
