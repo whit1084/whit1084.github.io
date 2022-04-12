@@ -1,27 +1,41 @@
 body {
     background-color: bisque;
 }
-/* nav bar container */
-.topnav {
-    background-color:black;
-    position: relative;
-    text-align: center;
-    background-size: 100% 100%;
 
-}
-/* nav text styles */
-a {
-    display:block;
-    text-align: center;
-    padding: 14px 16px;
-    display: inline;
-    float:initial;
-
+.nav-list{
+    background-color: black;
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.active {
+.nav-item {
+    list-style: none;
+    margin-right: 4rem;
+}
+
+.nav-item:nth-child(1) {
+    margin-left: 10rem;
+}
+
+.nav-item:nth-child(8) {
+    margin-right: 10rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+/* .active {
     background-color: #c78c06;
-}
+    color: black;
+} */
+
+
 
 .title-container {
     text-align: center;
