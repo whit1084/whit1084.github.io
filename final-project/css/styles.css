@@ -1,115 +1,245 @@
-body {
-    background-color: bisque;
-
-}
-
-.nav-list{
-    background-color: black;
-    margin: 0;
-    padding: 1rem 0;
-    border-radius: var(--radius);
+/* The code below ensures that all elements are sized in a more intuitive way where padding and border are included in the width and height */
+* {
+    box-sizing: border-box;
+  }
+/* Allows all images to display correctly, fitting into the containers they belong to. */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Background of the first page. Includes the styling of the background image. */
+  .main {
+    background: url("/images/main-banner.jpg");
+    max-width: 1200px;
+    background-size:cover;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.nav-item {
-    list-style: none;
-    margin-right: 4rem;
-}
-
-.nav-item:nth-child(1) {
-    margin-left: 10rem;
-    margin-right: 4rem;
-}
-.nav-item:nth-child(3) {
-    margin-right: 5rem;
-    margin-left: 1rem;
-}
-
-.nav-item:nth-child(4) {
-    margin-right: 4rem;
-    margin-left: 0.5rem;
-}
-
-.nav-item:nth-child(5) {
-    margin-right: 4rem;
-}
-
-.nav-item:nth-child(6) {
-    margin-right: 4rem;
-}
-
-.nav-item:nth-child(7) {
-    margin-right: 4rem;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: #c78c06;
-}
-
-.nav-item .active {
+    flex-direction: column;
+    
+  }
+  /* Creates the transparent black box, with solid white text overtop. */
+  .header-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    width:100%;
+    height:100%;
+    padding:10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  /* Large text for "Welcome To Three Star Media". */
+  .header-box h1 {
+    font-size: 70px;
+  }
+  /* Button "connect with us", located within the header, below the text. Styled to be wider and orange. */
+  .main button {
+    padding: 20px;
     background-color: #c78c06;
-    color: black;
-    padding: 1rem 2rem;
+    border:none;
+  }
+  /* Contains the entire "About Us" section. Used to create background colour, and padding on all sides. */
+  .about-container {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  /* Next two styles split the flexboxes into equal parts. */
+  .image {
+    flex: 1;
+  }
 
-}
+  .about-text{
+    flex: 1;
+  }
+  /* Desktop styling for page one. */
+  @media screen and (min-width: 760px) {
 
-.search-button {
+    .about-container {
+      flex-direction: row;
+    }
+    .about-text{
+      padding: 10px;
+    }
+
+    .about-content{
+      display: flex;
+      flex-direction: row;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .header-box {
+      margin: 50px;
+      width:auto;
+      height:auto;
+    }
+
+  }
+  /* Second page container, containing all the "Our Services" information. */
+  .services-background {
+    background-color:white;
+    max-width:1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* Digital Transformation box, displayed with flex. */
+  .digital-trans {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction:column;
+    
+  }
+  /* Small padding between text box and the end of service box. */
+  .text {
+    padding: 10px;
+  }
+  /* Marketing box, displayed with flex. */
+  .marketing {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction:column;
+  }
+  /* Flexbox for the first two services boxes. */
+  .upper-service-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* Desktop styling for the upper part of page two. */
+  @media screen and (min-width: 760px) {
+
+    .service-title {
+      margin-left: 100px;
+    }
+    
+    .upper-service-group {
+      flex-direction: row;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
+  /* Flexbox for the last three service boxes */
+  .lower-service-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* Video box, displayed with flex. */
+  .video {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction:column;
+  }
+  /* Web Development box, displayed with flex. */
+  .web {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction:column;
+  }
+  /* Print box, displayed with flex. */
+  .print {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction:column;
+  }
+  /* Destop display for lower part of page two. */
+  @media screen and (min-width: 760px) {
+    
+    .lower-service-group {
+      flex-direction: row;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
+  /* Box container of "Our Vision", including the background image. */
+  .our-vision {
+    background: url("/images/vision.jpg");
+    background-size:cover;
+    color: white;
+  }
+  /* Includes all content within "Our Vision" box, styled to have padding all around edges. */
+  .content {
+   padding: 10px;
+  }
+  /* Styles the buttons only within page two (services). Creates larger, black buttons with white text. Aligned to be on the left side. */
+  .services-background button {
+    padding: 20px;
     background-color: black;
-    border: 1px solid #c78c06;
-    color: #c78c06;
-    padding: 5px 5px;
-    position: relative;
-    margin-right: 0;
-}
+    color: white;
+    width: 30%;
+  }
+  /* Destop display for page two, buttons. Styles the buttons to fill the width of the box, and have the text within the button centered. */
+  @media screen and (min-width: 760px) {
+    .services-background button {
+      width:100%;
+    }
+    .our-vision button {
+      width: 20%;
+      border: none;
+    }
+  }
+  /* Thirs page container, containing the "our team" information. */
+  .our-team {
+    background-color: white;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.nav-item:nth-child(7) {
-   display:flex;
-   width: 100%;
-   
-}
+  /* Flexbox for John */
+  .john {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+  }
 
-.title-container {
-    text-align: center;
-    position: relative;
-    background-color: khaki;
-}
+  /* Styles the portraits to fill the flex container, and not bleed off. */
+  .portrait img {
+    object-fit: contain;
+  }
 
-.main-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-}
+  /* Flexbox for Bob */
+  .bob {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+  }
 
-.title-picture {
-    height: 800px;
-    width: 1200px;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about {
-    background-color: lightgreen;
-}
-
-.services {
-    background-color: lightseagreen;
-}
-
-.our-vision {
-    background-color: lightsteelblue;
-}
-
-.extra-info {
-    background-color: linen;
-}
-
-.footer {
-    background-color: orange;
-}
+  /* Flexbox containing both John and Bob boxes, used to create space between the items. */
+  .members {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* Destop styling for John section on page three, poistions items in a row. */
+  @media screen and (min-width: 760px) {
+    .john {
+      flex-direction: row;
+    }
+    .john .portrait {
+      flex:1;
+    }
+    .john .bio {
+      flex: 1;
+      padding: 10px;
+    }
+    .members {
+      gap: 0;
+    }
+  }
+  /* Destop styling for Bob section on page three, poistions items in a row and reverses the portrait and the bio. */
+  @media screen and (min-width: 760px) {
+    .bob {
+      flex-direction: row-reverse;
+    }
+    .bob .portrait {
+      flex: 1;
+    }
+    .bob .bio {
+      flex: 1;
+      padding: 10px;
+  }
+ }
+  
