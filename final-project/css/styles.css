@@ -17,6 +17,83 @@
     flex-direction: column;
     
   }
+
+.nav-container {
+display:flex;
+flex-direction:column;
+background-color:black;
+max-width:1200px;
+}
+
+.logo {
+padding:10px;
+background-color:#c78c06;
+margin: 10px 10px 0px 10px;
+}
+
+.navbar {
+display:flex;
+flex-direction: column;
+align-items: center;
+margin: 0px 10px 0px 10px;
+}
+
+.navbar a {
+text-decoration:none;
+color:#c78c06;
+padding:15px;
+}
+
+.navbar .active{
+background-color:#c78c06;
+color:black;
+width:100%;
+object-fit:contain;
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+.search {
+display:flex;
+flex-direction:row;
+padding:10px;
+}
+
+.search-button {
+background-color:black;
+border: 1px solid #c78c06;
+color: #c78c06;
+padding: 5px 5px;
+}
+
+input {
+width:100%;
+}
+
+@media screen and (min-width: 760px) {
+.nav-container {
+  flex-direction: row;
+  align-items:center;
+}
+.logo {
+  background:none;
+  margin-left:10%;
+  margin-right:5%;
+}
+.navbar {
+  flex-direction:row;
+}
+.navbar a {
+  padding:30px;
+}
+.search {
+  margin-right:10%;
+}
+.navbar .active {
+  padding:10px 20px;
+}
+}
   /* Creates the transparent black box, with solid white text overtop. */
   .header-box {
     background-color: rgba(0, 0, 0, 0.5);
@@ -231,6 +308,10 @@
   }
   /* Destop styling for Bob section on page three, poistions items in a row and reverses the portrait and the bio. */
   @media screen and (min-width: 760px) {
+    .members {
+      margin: 0% 10% 0% 10%;
+    }
+
     .bob {
       flex-direction: row-reverse;
     }
@@ -242,4 +323,105 @@
       padding: 10px;
   }
  }
+
+.layout {
+max-width: 1200px;
+display: grid;
+margin: 0px 10px 0px 10px;
+grid:
+  "message" auto
+  "hours" auto
+  "map" auto
+  / auto;
+gap: 8px;
+}
+
+.contact-title {
+font-size:25px;
+}
+
+.message {
+grid-area: message;
+}
+
+.form .text-box {
+width:100%;
+object-fit:contain;
+}
+
+.form .message-box {
+width:100%;
+object-fit:contain;
+}
+
+textarea {
+height: 120px;
+}
+
+.send-button {
+background-color:black;
+color:#c78c06;
+border:none;
+font-size:20px;
+padding:5px;
+}
+
+iframe {
+width: 100%;
+}
+
+.hours-title {
+font-size:20px;
+}
+
+table {
+border-collapse:collapse;
+width:100%;
+}
+
+th {
+background-color: #ffe6ac;
+}
+
+td, th {
+border: 1px solid black;
+padding:0.5rem;
+text-align:left;
+}
+
+.map {
+grid-area: map;
+}
+.hours {
+grid-area: hours;
+}
+
+footer {
+background-color:black;
+color:#c78c06;
+padding: 10px;
+}
+
+footer a {
+color:#c78c06;
+}
+
+@media screen and (min-width: 760px) {
+.layout {
+  max-width: 1200px;
+  height: 600px;
+  display: grid;
+  margin: 0% 10% 0% 10%;
+  grid:
+    "message map" 1fr
+    "hours hours" 1fr
+    / 1fr 1fr;
+  gap: 20px;
+}
+ 
+ .contact-title {
+   margin-left: 10%;
+ }
+} 
+
   
