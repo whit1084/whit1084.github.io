@@ -2,246 +2,269 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MTM6130 Final Project - whit1084</title>
-    <script src="https://kit.fontawesome.com/7ed0b53d81.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTM6130 Final Project - whit1084</title>
+  <script src="https://kit.fontawesome.com/7ed0b53d81.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="nav-container">
-        <div class="logo">
-          <img src="/images/logo.png" alt="logo">
+  <!-- Flexbox container for the entire navigation bar.-->
+  <div class="nav-container">
+    <!-- Container for the logo.-->
+    <div class="logo">
+      <img src="/images/logo.png" alt="logo">
+    </div>
+    <!-- Flexbox container for all navbar items.-->
+    <div class="navbar">
+      <a class="active" href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Team</a>
+      <a href="#">Contact</a>
+    </div>
+    <!-- Container for the search bar and search button.-->
+    <div class="search">
+      <input type="text" placeholder="Search">
+      <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </div>
+
+  <!-- Flexbox container for home page, excluding the navigation bar.-->
+  <div class="main">
+    <!-- Container for the transparent box, with the main title and welcome info.-->
+    <div class="header-box">
+      <h1>Welcome To Three Star Media</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloribus sapiente sed dicta, ex itaque
+        consectetur corrupti omnis assumenda magnam! Omnis provident impedit magni reiciendis est. Magnam
+        adipisci possimus consequatur.</p>
+      <div class="welcome-button"><button>Connect With Us <i class="fa-solid fa-caret-right"></i></button></div>
+    </div>
+    <!-- Container for the about section.-->
+    <div class="about-container">
+      <div class="about-content">
+        <!-- Container for the about image.-->
+        <div class="image">
+          <img src="/images/about-us.jpg" alt="about">
         </div>
-        <div class="navbar">
-          <a class="active" href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Services</a>
-          <a href="#">Team</a>
-          <a href="#">Contact</a>
+        <!-- Container for the about info/text.-->
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam totam, voluptate blanditiis
+            eveniet laborum esse consequuntur mollitia, ducimus assumenda, voluptatibus iusto! Doloribus,
+            voluptatum? Ratione fugiat pariatur eius necessitatibus fuga ad.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere, incidunt explicabo
+            excepturi commodi voluptatem officia corporis eius necessitatibus laborum eveniet aut beatae
+            tempore dolorem, hic dolorum qui inventore unde!</p>
         </div>
-        <div class="search">
-          <input type="text" placeholder="Search">
-          <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- Container for services header title.-->
+  <div class="service-title">
+    <h1>Our Services</h1>
+  </div>
+  <!-- Flex container for entire "Our Services" section. Used to create white background, and display the page correctly.-->
+  <div class="services-background">
+    <!-- Flexbox container for first two services boxes. Used to correctly display.-->
+    <div class="upper-service-group">
+      <!-- Each box has it's own container.-->
+      <div class="digital-trans">
+        <div class="image">
+          <img src="/images/digital.jpg" alt="digital">
+        </div>
+        <div class="text">
+          <h1> Digital Transformation </h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
+            at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
+            commodi labore expedita.
+          </p>
+          <button>Digital Plans <i class="fa-solid fa-caret-right"></i></button>
         </div>
       </div>
 
-    <div class="main">
-        <div class="header-box">
-            <h1>Welcome To Three Star Media</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloribus sapiente sed dicta, ex itaque
-                consectetur corrupti omnis assumenda magnam! Omnis provident impedit magni reiciendis est. Magnam
-                adipisci possimus consequatur.</p>
-            <div class="welcome-button"><button>Connect With Us</button></div>
+      <div class="marketing">
+        <div class="image">
+          <img src="/images/marketing.jpg" alt="marketing">
         </div>
-        <div class="about-container">
-            <div class="about-content">
-                <div class="image">
-                    <img src="/images/about-us.jpg" alt="about">
-                </div>
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam totam, voluptate blanditiis
-                        eveniet laborum esse consequuntur mollitia, ducimus assumenda, voluptatibus iusto! Doloribus,
-                        voluptatum? Ratione fugiat pariatur eius necessitatibus fuga ad.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere, incidunt explicabo
-                        excepturi commodi voluptatem officia corporis eius necessitatibus laborum eveniet aut beatae
-                        tempore dolorem, hic dolorum qui inventore unde!</p>
-                </div>
-            </div>
+        <div class="text">
+          <h1> Marketing </h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
+            at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
+            commodi labore expedita.</p>
+          <button>Marketing <i class="fa-solid fa-caret-right"></i></button>
         </div>
+      </div>
     </div>
-
-    <div class="service-title">
-        <h1>Our Services</h1>
-    </div>
-
-    <div class="services-background">
-
-        <div class="upper-service-group">
-
-            <div class="digital-trans">
-                <div class="image">
-                    <img src="/images/digital.jpg" alt="digital">
-                </div>
-                <div class="text">
-                    <h1> Digital Transformation </h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
-                        at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
-                        commodi labore expedita.
-                    </p>
-                    <button>Digital Plans</button>
-                </div>
-            </div>
-
-            <div class="marketing">
-                <div class="image">
-                    <img src="/images/marketing.jpg" alt="marketing">
-                </div>
-                <div class="text">
-                    <h1> Marketing </h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
-                        at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
-                        commodi labore expedita.</p>
-                    <button>Marketing</button>
-                </div>
-            </div>
+    <!--Flexbox container for first two services boxes. Used to correctly display.-->
+    <div class="lower-service-group">
+      <!-- Each box has it's own container.-->
+      <div class="video">
+        <div class="image">
+          <img src="/images/video.jpg" alt="digital">
         </div>
-
-        <div class="lower-service-group">
-
-            <div class="video">
-                <div class="image">
-                    <img src="/images/video.jpg" alt="digital">
-                </div>
-                <div class="text">
-                    <h1> Video Production </h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
-                        at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
-                        commodi labore expedita.
-                    </p>
-                    <button>Video Plans</button>
-                </div>
-            </div>
-
-            <div class="web">
-                <div class="image">
-                    <img src="/images/web.jpg" alt="marketing">
-                </div>
-                <div class="text">
-                    <h1> Web Development </h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
-                        at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
-                        commodi labore expedita.
-                    </p>
-                    <button>Web Plans</button>
-                </div>
-            </div>
-            <div class="print">
-                <div class="image">
-                    <img src="/images/print.jpg" alt="digital">
-                </div>
-                <div class="text">
-                    <h1> Print </h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
-                        at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
-                        commodi labore expedita.
-                    </p>
-                    <button>Print Plans</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="our-vision">
-            <div class="content">
-                <h1>Our Vision</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum temporibus vitae dolore nulla ea
-                    tenetur? Beatae doloribus, soluta qui asperiores labore consectetur dolor rerum non, voluptatum
-                    facilis architecto id iure.</p>
-                <button>Learn More</button>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="our-team">
-        <div class="title">
-          <h1>Our Team</h1>
-        </div>
-        <div class="members">
-        <div class="john">
-          <div class="portrait">
-            <img src="/images/john.jpg" alt="john">
-          </div>
-          <div class="bio">
-            <h2>John Doe</h2>
-            <h3>CEO and Co-owner</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi voluptate dicta nemo laudantium. Numquam natus obcaecati velit neque quos, consequatur, saepe cum dicta possimus fugit qui animi voluptatum eligendi!</p>
-          </div>
-        </div>
-        <div class="bob">
-          <div class="portrait">
-            <img src="/images/bob.jpg" alt="bob">
-          </div>
-          <div class="bio">
-            <h2>Bob Rite</h2>
-            <h3>CFO and Co-owner</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quam, omnis et aliquid adipisci sed laborum culpa suscipit nobis nulla quaerat iusto porro, quas quibusdam aperiam amet nihil natus. Minima.</p>
-          </div>
-        </div>
+        <div class="text">
+          <h1> Video Production </h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
+            at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
+            commodi labore expedita.
+          </p>
+          <button>Video Plans <i class="fa-solid fa-caret-right"></i></button>
         </div>
       </div>
 
-    </section>
-    <div class="contact-title">
-      <h1>Contact Us</h1>
+      <div class="web">
+        <div class="image">
+          <img src="/images/web.jpg" alt="marketing">
+        </div>
+        <div class="text">
+          <h1> Web Development </h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
+            at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
+            commodi labore expedita.
+          </p>
+          <button>Web Plans <i class="fa-solid fa-caret-right"></i></button>
+        </div>
+      </div>
+      <div class="print">
+        <div class="image">
+          <img src="/images/print.jpg" alt="digital">
+        </div>
+        <div class="text">
+          <h1> Print </h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ratione quis animi ex suscipit,
+            at ipsam saepe facilis quidem placeat adipisci alias perferendis impedit omnis. Harum ratione
+            commodi labore expedita.
+          </p>
+          <button>Print Plans <i class="fa-solid fa-caret-right"></i></button>
+        </div>
+      </div>
     </div>
-    <section class="layout">
-      <div class="message">
-        <div class="message-flex">
-    
-          <div class="message-container">
-            <div class="send-message">
-              <h2>Send us a message</h2>
-            </div>
-            <div class="form">
-              <label for="fullname">Full Name</label><br>
-              <input class="text-box" type="text" id="fullname"><br>
-              <label for="email">Email</label><br>
-              <input class="text-box" type="text" id="email"><br>
-              <label for="message">Message</label><br>
-              <textarea class="message-box" id="message" name="message"></textarea><br>
-    
-              <input class="send-button" type="button" value="Send">
-            </div>
+    <!-- Container for "Our Vision", allows image background to be made.-->
+    <div class="our-vision">
+      <div class="content">
+        <h1>Our Vision</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum temporibus vitae dolore nulla ea
+          tenetur? Beatae doloribus, soluta qui asperiores labore consectetur dolor rerum non, voluptatum
+          facilis architecto id iure.</p>
+        <button>Learn More <i class="fa-solid fa-caret-right"></i></button>
+      </div>
+
+    </div>
+  </div>
+  <!-- Flexbox container for "Our Team", allows proper positioning.-->
+  <div class="our-team">
+    <div class="title">
+      <h1>Our Team</h1>
+    </div>
+    <!-- Flexbox container containing both individuals.-->
+    <div class="members">
+      <!-- Flexbox container for John. Also containing smaller containers within, to properly style.-->
+      <div class="john">
+        <div class="portrait">
+          <img src="/images/john.jpg" alt="john">
+        </div>
+        <div class="bio">
+          <h2>John Doe</h2>
+          <h3>CEO and Co-owner</h3>
+          <hr>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi voluptate dicta nemo laudantium.
+            Numquam natus obcaecati velit neque quos, consequatur, saepe cum dicta possimus fugit qui animi voluptatum
+            eligendi!</p>
+        </div>
+      </div>
+      <!-- Flexbox container for Bob. Also containing smaller containers within, to properly style.-->
+      <div class="bob">
+        <div class="portrait">
+          <img src="/images/bob.jpg" alt="bob">
+        </div>
+        <div class="bio">
+          <h2>Bob Rite</h2>
+          <h3>CFO and Co-owner</h3>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quam, omnis et aliquid adipisci sed
+            laborum culpa suscipit nobis nulla quaerat iusto porro, quas quibusdam aperiam amet nihil natus. Minima.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Title container.-->
+  <div class="contact-title">
+    <h1>Contact Us</h1>
+  </div>
+  <!-- Grid container containing "send us a message", "location", and "hours."-->
+  <section class="layout">
+    <!-- Frist grid item.-->
+    <div class="message">
+      <div class="message-flex">
+
+        <div class="message-container">
+          <div class="send-message">
+            <h2>Send us a message</h2>
+          </div>
+          <div class="form">
+            <label for="fullname">Full Name</label><br>
+            <input class="text-box" type="text" id="fullname"><br>
+            <label for="email">Email</label><br>
+            <input class="text-box" type="text" id="email"><br>
+            <label for="message">Message</label><br>
+            <textarea class="message-box" id="message" name="message"></textarea><br>
+
+            <input class="send-button" type="button" value="Send">
           </div>
         </div>
       </div>
-    
+    </div>
+    <!-- Second grid item.-->
+    <div class="map">
+      <div class="location">
+        <h2>Location</h2>
+      </div>
       <div class="map">
-        <div class="location">
-          <h2>Location</h2>
-        </div>
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9809.786815185049!2d-75.76460326691003!3d45.34913697214053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648751125712!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9809.786815185049!2d-75.76460326691003!3d45.34913697214053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648751125712!5m2!1sen!2sca"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    
-      <div class="hours">
-        <div class="hours-title">
-          <h2>Hours of operation</h2>
-        </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Days</th>
-              <th>Hours</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Monday - Friday</td>
-              <td>9AM - 6PM</td>
-            </tr>
-            <tr>
-              <td>Saturday - Sunday</td>
-              <td>Closed</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    
-    <div class="footer">
-      <footer>
-        <h4>&copy Copyright Three Star Media, 2020</h4>
-        <h4>All images are taken from <a href="https://unsplash.com/">Unsplash</a></h4>
-      </footer>
     </div>
+    <!-- Third grid item.-->
+    <div class="hours">
+      <div class="hours-title">
+        <h2>Hours of operation</h2>
+      </div>
+      <!-- Sets up table to be styled.-->
+      <table>
+        <thead>
+          <tr>
+            <th>Days</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday - Friday</td>
+            <td>9AM - 6PM</td>
+          </tr>
+          <tr>
+            <td>Saturday - Sunday</td>
+            <td>Closed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- Container for the footer, with copyright info and sources.-->
+  <div class="footer">
+    <footer>
+      <h4>&copy;Copyright Three Star Media, 2020</h4>
+      <h4>All images are taken from <a href="https://unsplash.com/">Unsplash</a></h4>
+    </footer>
+  </div>
 </body>
 
 </html>

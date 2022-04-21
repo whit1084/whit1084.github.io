@@ -1,427 +1,562 @@
-/* The code below ensures that all elements are sized in a more intuitive way where padding and border are included in the width and height */
+/* The reset code below ensures that all elements are sized in a more intuitive way where padding and border are included in the width and height */
 * {
-    box-sizing: border-box;
-  }
-/* Allows all images to display correctly, fitting into the containers they belong to. */
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  /* Background of the first page. Includes the styling of the background image. */
-  .main {
-    background: url("/images/main-banner.jpg");
-    max-width: 1200px;
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-.nav-container {
-display:flex;
-flex-direction:column;
-background-color:black;
-max-width:1200px;
+  box-sizing: border-box;
 }
-
-.logo {
-padding:10px;
-background-color:#c78c06;
-margin: 10px 10px 0px 10px;
+/* This reset code allows all images to display correctly, fitting into the containers they belong to. */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-.navbar {
-display:flex;
-flex-direction: column;
-align-items: center;
-margin: 0px 10px 0px 10px;
-}
-
-.navbar a {
-text-decoration:none;
-color:#c78c06;
-padding:15px;
-}
-
-.navbar .active{
-background-color:#c78c06;
-color:black;
-width:100%;
-object-fit:contain;
-display:flex;
-flex-direction: column;
-align-items: center;
-}
-
-.search {
-display:flex;
-flex-direction:row;
-padding:10px;
-}
-
-.search-button {
-background-color:black;
-border: 1px solid #c78c06;
-color: #c78c06;
-padding: 5px 5px;
-}
-
-input {
-width:100%;
-}
-
-@media screen and (min-width: 760px) {
-.nav-container {
-  flex-direction: row;
-  align-items:center;
-}
-.logo {
-  background:none;
-  margin-left:10%;
-  margin-right:5%;
-}
-.navbar {
-  flex-direction:row;
-}
-.navbar a {
-  padding:30px;
-}
-.search {
-  margin-right:10%;
-}
-.navbar .active {
-  padding:10px 20px;
-}
-}
-  /* Creates the transparent black box, with solid white text overtop. */
-  .header-box {
-    background-color: rgba(0, 0, 0, 0.5);
-    color:white;
-    width:100%;
-    height:100%;
-    padding:10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  /* Large text for "Welcome To Three Star Media". */
-  .header-box h1 {
-    font-size: 70px;
-  }
-  /* Button "connect with us", located within the header, below the text. Styled to be wider and orange. */
-  .main button {
-    padding: 20px;
-    background-color: #c78c06;
-    border:none;
-  }
-  /* Contains the entire "About Us" section. Used to create background colour, and padding on all sides. */
-  .about-container {
-    background-color: lightyellow;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  }
-  /* Next two styles split the flexboxes into equal parts. */
-  .image {
-    flex: 1;
-  }
-
-  .about-text{
-    flex: 1;
-  }
-  /* Desktop styling for page one. */
-  @media screen and (min-width: 760px) {
-
-    .about-container {
-      flex-direction: row;
-    }
-    .about-text{
-      padding: 10px;
-    }
-
-    .about-content{
-      display: flex;
-      flex-direction: row;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-
-    .header-box {
-      margin: 50px;
-      width:auto;
-      height:auto;
-    }
-
-  }
-  /* Second page container, containing all the "Our Services" information. */
-  .services-background {
-    background-color:white;
-    max-width:1200px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  /* Digital Transformation box, displayed with flex. */
-  .digital-trans {
-    background-color: lightyellow;
-    display: flex;
-    flex-direction:column;
-    
-  }
-  /* Small padding between text box and the end of service box. */
-  .text {
-    padding: 10px;
-  }
-  /* Marketing box, displayed with flex. */
-  .marketing {
-    background-color: lightyellow;
-    display: flex;
-    flex-direction:column;
-  }
-  /* Flexbox for the first two services boxes. */
-  .upper-service-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  /* Desktop styling for the upper part of page two. */
-  @media screen and (min-width: 760px) {
-
-    .service-title {
-      margin-left: 100px;
-    }
-    
-    .upper-service-group {
-      flex-direction: row;
-      margin-left: 100px;
-      margin-right: 100px;
-    }
-  }
-  /* Flexbox for the last three service boxes */
-  .lower-service-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  /* Video box, displayed with flex. */
-  .video {
-    background-color: lightyellow;
-    display: flex;
-    flex-direction:column;
-  }
-  /* Web Development box, displayed with flex. */
-  .web {
-    background-color: lightyellow;
-    display: flex;
-    flex-direction:column;
-  }
-  /* Print box, displayed with flex. */
-  .print {
-    background-color: lightyellow;
-    display: flex;
-    flex-direction:column;
-  }
-  /* Destop display for lower part of page two. */
-  @media screen and (min-width: 760px) {
-    
-    .lower-service-group {
-      flex-direction: row;
-      margin-left: 100px;
-      margin-right: 100px;
-    }
-  }
-  /* Box container of "Our Vision", including the background image. */
-  .our-vision {
-    background: url("/images/vision.jpg");
-    background-size:cover;
-    color: white;
-  }
-  /* Includes all content within "Our Vision" box, styled to have padding all around edges. */
-  .content {
-   padding: 10px;
-  }
-  /* Styles the buttons only within page two (services). Creates larger, black buttons with white text. Aligned to be on the left side. */
-  .services-background button {
-    padding: 20px;
-    background-color: black;
-    color: white;
-    width: 30%;
-  }
-  /* Destop display for page two, buttons. Styles the buttons to fill the width of the box, and have the text within the button centered. */
-  @media screen and (min-width: 760px) {
-    .services-background button {
-      width:100%;
-    }
-    .our-vision button {
-      width: 20%;
-      border: none;
-    }
-  }
-  /* Thirs page container, containing the "our team" information. */
-  .our-team {
-    background-color: white;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Flexbox for John */
-  .john {
-    background-color: lightyellow;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Styles the portraits to fill the flex container, and not bleed off. */
-  .portrait img {
-    object-fit: contain;
-  }
-
-  /* Flexbox for Bob */
-  .bob {
-    background-color: lightyellow;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Flexbox containing both John and Bob boxes, used to create space between the items. */
-  .members {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  /* Destop styling for John section on page three, poistions items in a row. */
-  @media screen and (min-width: 760px) {
-    .john {
-      flex-direction: row;
-    }
-    .john .portrait {
-      flex:1;
-    }
-    .john .bio {
-      flex: 1;
-      padding: 10px;
-    }
-    .members {
-      gap: 0;
-    }
-  }
-  /* Destop styling for Bob section on page three, poistions items in a row and reverses the portrait and the bio. */
-  @media screen and (min-width: 760px) {
-    .members {
-      margin: 0% 10% 0% 10%;
-    }
-
-    .bob {
-      flex-direction: row-reverse;
-    }
-    .bob .portrait {
-      flex: 1;
-    }
-    .bob .bio {
-      flex: 1;
-      padding: 10px;
-  }
- }
-
-.layout {
-max-width: 1200px;
-display: grid;
-margin: 0px 10px 0px 10px;
-grid:
-  "message" auto
-  "hours" auto
-  "map" auto
-  / auto;
-gap: 8px;
-}
-
-.contact-title {
-font-size:25px;
-}
-
-.message {
-grid-area: message;
-}
-
-.form .text-box {
-width:100%;
-object-fit:contain;
-}
-
-.form .message-box {
-width:100%;
-object-fit:contain;
-}
-
-textarea {
-height: 120px;
-}
-
-.send-button {
-background-color:black;
-color:#c78c06;
-border:none;
-font-size:20px;
-padding:5px;
-}
-
-iframe {
-width: 100%;
-}
-
-.hours-title {
-font-size:20px;
-}
-
-table {
-border-collapse:collapse;
-width:100%;
-}
-
-th {
-background-color: #ffe6ac;
-}
-
-td, th {
-border: 1px solid black;
-padding:0.5rem;
-text-align:left;
-}
-
-.map {
-grid-area: map;
-}
-.hours {
-grid-area: hours;
-}
-
-footer {
-background-color:black;
-color:#c78c06;
-padding: 10px;
-}
-
-footer a {
-color:#c78c06;
-}
-
-@media screen and (min-width: 760px) {
-.layout {
+/* Background of the first page. Includes the styling to control the position of the background image. */
+.main {
+  background: url("/images/main-banner.jpg");
   max-width: 1200px;
-  height: 600px;
-  display: grid;
-  margin: 0% 10% 0% 10%;
-  grid:
-    "message map" 1fr
-    "hours hours" 1fr
-    / 1fr 1fr;
-  gap: 20px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: 0px -300px;
 }
- 
- .contact-title {
-   margin-left: 10%;
- }
-} 
 
-  
+/* Used to hold all items within navbar. Also used in order to create black background that stretches across page. */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  max-width: 1200px;
+}
+
+/* Container for the logo image, mainly used to create a coloured background that can be styled different than the image. */
+.logo {
+  padding: 10px;
+  background-color: #c78c06;
+  margin: 10px 10px 0px 10px;
+}
+/* Logo image, sized to match mockup. */
+.logo img {
+  width: 20%;
+}
+/* Uses flexbox container to center and align the navbar items (ex. Home, About Us, etc). */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+/* Selecting all items of the "navbar" container, and styling them to match mockup. */
+.navbar a {
+  text-decoration: none;
+  color: #c78c06;
+  padding: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Simulating "home" as the active item. */
+.navbar .active {
+  background-color: #c78c06;
+  color: black;
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Flex container to control layout of both search bar and search button. */
+.search {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+/* Styling for search button to match mockup. */
+.search-button {
+  background-color: black;
+  border: 1px solid #c78c06;
+  color: #c78c06;
+  padding: 5px 5px;
+}
+/* Insures the search box fills all avaliable space within its container. */
+.nav-container input {
+  width: 100%;
+}
+/* Desktop styling for navigation bar. */
+@media screen and (min-width: 760px) {
+  /* Positions navigation bar into a row, at the top of the page. */
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+  }
+  /* Removes background colour, and positions image on the left with an indentation. */
+  .logo {
+    background: none;
+    margin-left: 60px;
+  }
+  /* Sized to match mockup */
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+  /* Positions navbar items into a row instead of a column. */
+  .navbar {
+    flex-direction: row;
+  }
+  /* Styles navbar items to be evenly spaced. */
+  .navbar a {
+    margin: 10px;
+    font-size: 15px;
+    flex: 1;
+    width: 100px;
+  }
+  /* Creates indentation on right side of navbar. */
+  .search {
+    margin-right: 60px;
+  }
+  .navbar .active {
+    padding: 10px 20px;
+  }
+}
+/* Creates the transparent black box, with solid white text overtop. */
+.header-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Large text for "Welcome To Three Star Media". */
+.header-box h1 {
+  font-size: 70px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Button "connect with us", located within the header, below the text. Styled to be wider and orange. */
+.main button {
+  padding: 30px 40px 30px 30px;
+  background-color: #c78c06;
+  border: none;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Styling for the caret icons. Makes them larger and spaced from text. */
+.fa-caret-right {
+  font-size: 30px;
+  padding-left: 10px;
+}
+/* Contains the entire "About Us" section. Used to create background colour, and padding on all sides. */
+.about-container {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+/* Next two styles split the flexboxes into equal parts. */
+.image {
+  flex: 1;
+}
+
+.about-text {
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+}
+/* Creates bigger text sizing for title, also removes empty space from bottom and top. */
+.about-text h2 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Desktop styling for page one. */
+@media screen and (min-width: 760px) {
+  /* Positions into a row, and sized to match mockup. */
+  .about-container {
+    flex-direction: row;
+    height: 70%;
+  }
+  /* Creates margins on either side of page one. */
+  .main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* Smaller text, with space around. */
+  .about-text {
+    padding: 10px;
+    font-size: 12px;
+  }
+  /* Flexbox positions flex items into a row, and creates indents on either side of the content. */
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  /* Styles the transparent, title box to be centered and have margins all around. */
+  .header-box {
+    margin: 50px;
+    width: auto;
+    height: auto;
+  }
+}
+/* Second page container, containing all the "Our Services" information. */
+.services-background {
+  background-color: white;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Font styling to match mockup */
+.service-title {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+/* Creates small space underneath all h2 text. */
+h1 {
+  margin-bottom: 10px;
+}
+
+/* Digital Transformation box, displayed with flex. */
+.digital-trans {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+}
+/* Small padding between text box and the end of service box. */
+.text {
+  padding: 10px;
+}
+/* Marketing box, displayed with flex. */
+.marketing {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+}
+/* Flexbox for the first two services boxes. */
+.upper-service-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Desktop styling for the upper part of page two. */
+@media screen and (min-width: 760px) {
+  /* Creates indentation on the left. */
+  .service-title {
+    margin-left: 100px;
+  }
+  /* Displays first two services boxes in a row, with indentations to match mockup. */
+  .upper-service-group {
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+/* Flexbox for the last three service boxes */
+.lower-service-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Video box, displayed with flex. */
+.video {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+}
+/* Web Development box, displayed with flex. */
+.web {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+}
+/* Print box, displayed with flex. */
+.print {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+}
+/* Destop display for lower part of page two. */
+@media screen and (min-width: 760px) {
+  /* Displays last three services boxes in a row, with indentations to match mockup. */
+  .lower-service-group {
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+/* Box container of "Our Vision". Including the background image, correctly positioned to match mockup. */
+.our-vision {
+  background: url("/images/vision.jpg");
+  background-size: cover;
+  color: white;
+  background-position: 0px -150px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+/* Includes all content within "Our Vision" box, styled to have padding all around edges. */
+.content {
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* Styles the buttons only within page two (services). Creates larger, black buttons with white text. Aligned to be on the left side. */
+.services-background button {
+  padding: 30px;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 30%;
+  font-size: 20px;
+}
+/* Creates small button border only for "Our Vision" button */
+.our-vision button {
+  border: 0.5px solid #c78c06;
+  padding-right: 15px;
+}
+/* Destop display for page two, buttons. Styles the buttons to fill the width of the box, and have the text within the button centered. */
+@media screen and (min-width: 760px) {
+  .services-background button {
+    width: 100%;
+  }
+  .our-vision button {
+    width: 20%;
+    border: none;
+  }
+}
+/* Third page flexbox container, containing the "our team" information. Creates indentation on either side. */
+.our-team {
+  background-color: white;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Font sizing to match mockup. */
+.our-team .title {
+  font-size: 25px;
+}
+
+/* Flexbox for John */
+.john {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles the portraits to fill the flex container, and not bleed off. */
+.portrait img {
+  object-fit: contain;
+}
+
+/* Flexbox for Bob */
+.bob {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+}
+/* Padding for the bio text of both people. */
+.bio {
+  padding: 10px;
+}
+/* Removes extra space around h3 text. */
+h3 {
+  margin: 0;
+}
+
+/* Styles linebreak to correct colour with margins on either side. */
+.our-team hr {
+  border: 1px solid #c78c06;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Flexbox containing both John and Bob boxes, used to create space between the items. */
+.members {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Destop styling for John section on page three, poistions items in a row. */
+@media screen and (min-width: 760px) {
+  /* Displays John's info into a row. */
+  .john {
+    flex-direction: row;
+  }
+  /* Equal box sizing between items. */
+  .john .portrait {
+    flex: 1;
+  }
+  /* Equal box sizing between items, and padding around text. */
+  .john .bio {
+    flex: 1;
+    padding: 10px;
+  }
+  /* Removes spacing between John and Bob. */
+  .members {
+    gap: 0;
+  }
+  /* Indents team title. */
+  .title {
+    margin-left: 10%;
+  }
+}
+/* Destop styling for Bob section on page three, poistions items in a row and reverses the portrait and the bio. */
+@media screen and (min-width: 760px) {
+  /* Creates margins on either side. */
+  .members {
+    margin: 0% 10% 0% 10%;
+  }
+  /* Styled to flip Bob's portrait and bio when changed into desktop mode. */
+  .bob {
+    flex-direction: row-reverse;
+  }
+  /* Equal box sizing between items. */
+  .bob .portrait {
+    flex: 1;
+  }
+  /* Equal box sizing between items, and padding around text. */
+  .bob .bio {
+    flex: 1;
+    padding: 10px;
+  }
+}
+/* Grid used on final page in order to correctly order items in both mobile and desktop. Ordered "send us a message, "hours of operation", and "location" when in mobile. */
+ .layout {
+  max-width: 1200px;
+  display: grid;
+  margin: 0px 10px 0px 10px;
+  grid:
+    "message" auto
+    "hours" auto
+    "map" auto
+    / auto;
+  gap: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Creates small space underneath h2 text, also sized to match mockup. */
+h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+/* Text sized to match mockup. */
+.contact-title {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Text sized to match mockup. */
+.send-message {
+  font-size: 20px;
+}
+/* Grid item for send a message section. */
+.message {
+  grid-area: message;
+}
+/* Spans text box to fit page size. */
+.form .text-box {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+/* Spans message box to fit page size. */
+.form .message-box {
+  width: 100%;
+  object-fit: contain;
+}
+/* Creates larger box for the message. */
+textarea {
+  height: 120px;
+}
+/* Styles send button to match mockup. */
+.send-button {
+  background-color: black;
+  color: #c78c06;
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 10px;
+}
+/* Sizing for map, to match mockup. Also adding a margin on the bottom. */
+iframe {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 15px;
+}
+/* Text sizing to match mockup. */
+.hours-title {
+  font-size: 20px;
+}
+/* Styles table to merge as one, also creates margin on the bottom. */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* Creates coloured background for table header, border lines to display as a table, and positions text in the center. */
+th {
+  background-color: #ffe6ac;
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-align: center;
+}
+/* Creates border lines to display as a table, and positions content text on the left */
+td {
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-align: left;
+}
+/* Grid item for map section */
+.map {
+  grid-area: map;
+}
+/* Grid item for hours section */
+.hours {
+  grid-area: hours;
+}
+/* Styles footer to match mockup; black background, orange text. */
+footer {
+  background-color: black;
+  color: #c78c06;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Styles h4 text to match mockup, and indent on the left. */
+h4 {
+  font-weight: 200;
+  font-size: 10px;
+  margin-left: 10%;
+}
+/* Styles footer link to be same colour as other text within footer. */
+footer a {
+  color: #c78c06;
+}
+/* Desktop styling for last page. */
+@media screen and (min-width: 760px) {
+  /* Grid styled to switch the order of grid items when in desktop mode. Ordered; "send us a message, "location", and "hours". */
+  .layout {
+    max-width: 1200px;
+    height: 800px;
+    display: grid;
+    margin: 0% 10% 0% 10%;
+    grid:
+      "message map" 1fr
+      "hours hours" 1fr
+      / 1fr 1fr;
+    gap: 20px;
+  }
+  /* Creates indentation on the left of title. */
+  .contact-title {
+    margin-left: 10%;
+  }
+  /* Creates larger text box. */
+  .form .text-box {
+    padding: 10px;
+  }
+  /* Creates larger message box. */
+  .form .message-box {
+    height: 200px;
+  }
+}
