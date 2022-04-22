@@ -10,7 +10,7 @@ img {
 }
 /* Background of the first page. Includes the styling to control the position of the background image. */
 .main {
-  background: url("images/main-banner.jpg");
+  background: url("../images/main-banner.jpg");
   max-width: 1200px;
   background-size: cover;
   display: flex;
@@ -288,7 +288,7 @@ h1 {
 }
 /* Box container of "Our Vision". Including the background image, correctly positioned to match mockup. */
 .our-vision {
-  background: url("images/vision.jpg");
+  background: url("../images/vision.jpg");
   background-size: cover;
   color: white;
   background-position: 0px -150px;
